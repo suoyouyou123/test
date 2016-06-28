@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="Swiper demo_files/swiper.min.css">
+</head>
+<body>
+	<div class="container">
+			<div class="question" id="question">
+			<!-- 约会 -->
+			<section class="qusLover">
+				<!-- 第一题 -->
+					<div class="choice swiper-container">
+						<div class="choiceLover swiper-wrapper">
+							<div class="Lover swiper-slide" data-choice="A" data-num="15">
+								<h2><img src="images/1At.png"></h2>
+								<p><img src="images/1A.png"></p>
+							</div>
+							<div class="Lover swiper-slide" data-choice="B" data-num="25">
+								<h2><img src="images/1Bt.png"></h2>
+								<p><img src="images/1B.png"></p>
+							</div>
+							<div class="Lover swiper-slide" data-choice="C" data-num="0">
+								<h2><img src="images/1Ct.jpg"></h2>
+								<p><img src="images/1C.jpg"></p>
+							</div>
+					  </div>
+						<p id="btn-lover" class="btn-lover"><img src="images/btn.png"></p>
+						<div class="left" id="left"><img src="images/left.png"></div>
+						<div class="right" id="right"><img src="images/right.png"></div>
+					</div>
+				<!-- 第二题 -->
+							
+			<div class="choice swiper-container">
+					<div class="choiceLover swiper-wrapper">
+							<div class="Lover swiper-slide" data-choice="A" data-num="15">
+							<h2><img src="images/2At.png"></h2>
+							<p><img src="images/2A.png"></p>
+						</div>
+						<div class="Lover swiper-slide" data-choice="B" data-num="25">
+							<h2><img src="images/2Bt.png"></h2>
+							<p><img src="images/2B.png"></p>
+						</div>
+						<div class="Lover swiper-slide" data-choice="C" data-num="15">
+							<h2><img src="images/2Ct.png"></h2>
+							<p><img src="images/2C.png"></p>
+						</div>
+						<div class="Lover swiper-slide" data-choice="D" data-num="15">
+							<h2><img src="images/2Dt.png"></h2>
+							<p><img src="images/2D.png"></p>
+						</div>
+					</div>
+			<p id="btn-lover" class="btn-lover"><img src="images/btn.png" ></p>
+			<div class="left" id="left"><img src="images/left.png"></div>
+			<div class="right" id="right"><img src="images/right.png"></div>
+			</div>
+		<!-- 	第三题 -->
+					
+			
+				<div class="choice swiper-container">
+					<div class="choiceLover swiper-wrappe">
+						<div class="Lover loverA swiper-slide"  data-choice="A" data-num="5">
+							<h2><img src="images/4At.png"></h2>
+							<p><img src="images/4A.png"></p>
+						</div>
+						<div class="Lover loverB swiper-slider" data-choice="B" data-num="25">
+							<h2><img src="images/4Bt.png"></h2>
+							<p><img src="images/4B.png"></p>
+						</div>
+						<div class="Lover swiper-slide loverC" data-choice="C" data-num="15">
+							<h2><img src="images/4Ct.png"></h2>
+							<p><img src="images/4C.png"></p>
+						</div>
+					</div>
+				<p id="btn-lover" class="btn-lover" data-btn="last"><img src="images/btn.png" ></p>
+					<div class="left" id="left"><img src="images/left.png"></div>
+					<div class="right" id="right"><img src="images/right.png"></div>
+				</div>
+			</section>
+			
+		</div>
+		
+	
+		
+ 	</div>
+	
+	<script src="Swiper demo_files/swiper.min.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper(".swiper-container",{
+			nextButton:".right",
+			prevButton:".left"
+
+		})
+
+
+	</script>
+</body>
+</html>

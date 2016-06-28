@@ -1,0 +1,302 @@
+@charset "UTF-8";//编码
+@import url(reset.css);
+
+@mixin full{
+	width:100%;
+	height:100%;
+}
+html,body,.container{
+	@include full;
+	background:url(../images/index.png);
+}
+html{
+	font-size:62.5%;
+}
+@mixin pos($r:relative){
+	position:$r;
+}
+@mixin box($v:horizontal){
+	display:-webkit-box;
+	-webkit-box-orient:$v;
+}
+.container{
+	@include box(vertical);
+}
+//-----------加载----------
+.loading{
+	@include full;
+	background:url(../images/index.png);
+		p{
+			height:20px;
+			width:200px;
+			border-radius:10px 10px;
+			border:1px solid #ccc;
+			margin:0 auto;
+			@include pos;
+		em{
+			height:20px;
+			width:0;
+			background:red;
+			display:block;
+			border-radius:10px 10px;
+			
+			
+		}
+	}
+	
+}
+.img{
+	height:300px;
+	width:100%;
+	padding-top:80px;
+	img{
+		width:100px;
+		height:180px;
+		display:block;
+		margin:0 auto;
+		@include pos;
+		background-size:100% 100%;
+		
+	}
+}
+.span{
+	width:100px;
+	height:30px;
+	text-align:center;
+	@include pos(absolute);
+	left:50%;
+	margin-left:-50px;
+	top:330px;
+}
+//----------选择性别----------
+.sexChoose{
+	display:none;
+	@include full;
+	@include pos;
+	background:#FCF9F6;
+	div{
+
+		img{
+			width:90%;
+			height:60px;
+			margin-left:5%;
+			background-size:100%;
+			&:nth-child(1){
+				margin-top:80px;
+			}
+			&:nth-child(2){
+				width:80%;
+				margin-left:10%;
+				height:45px;
+			}
+			&:nth-child(4){
+				width:60%;
+				margin:10px 10px; 
+				margin-left:18%;
+				height:24px;
+			}
+		}	
+	}
+	p{
+		height:20px;
+		width:200px;
+		color:#04952D;
+		text-align:center;
+		@include pos(absolute);
+		bottom:20px;
+		left:50%;
+		margin-left:-100px;
+		text-align:center;
+	}	
+}
+.nav{
+	height:80px;
+	width:80%;
+	margin:0 auto;
+	padding-top:50px;
+	a{		
+		height:80px;
+		width:48%;
+		text-align:center;
+		display:inline-block;	
+		img{
+			width:80px;
+			height:80px;
+			background-size:100%;	
+		}
+	}		
+}
+//---------------星座----------
+.star{
+	@include full;
+	@include box(vertical);
+	display:none;
+	background:#FBF8F3;
+	@include pos;
+	h1{
+		width:100%;
+		padding-top:50px;
+		img{
+			width:180px;
+			height:25px;
+			display:block;
+			margin:0 auto;
+			background-size:100%;			
+		}
+	}
+	p{
+		text-align:center;
+		color:#E87700;
+		height:40px;
+		line-height:40px;
+		width:200px;
+		@include pos(absolute);
+		left:50%;
+		margin-left:-100px;
+		bottom:-5px;
+	}
+}
+.wrap{
+	@include box(vertical);
+	@include full;
+	-webkit-box-flex:1;
+	div{
+		@include box;
+		text-align:center;
+		width:100%;
+		padding-top:10px;
+		dl{
+			width:30%;
+			@include box;
+			-webkit-box-flex:1;
+			padding-left:10px;
+			height:85px;
+			dt{
+				width:60px;
+				height:70px;
+				margin-right:5px;
+				img{
+					width:60px;
+					height:70px;
+					background-size:100%;
+				}
+			}
+			dd{
+				width:10px;
+				height:70px;
+				padding-top:15px;
+				color:#D57726;
+			}
+
+		}
+  }		
+}
+//---------内容页----------
+.content{
+	@include box;
+	width:100%;
+	height:70%;
+	@include pos;
+	overflow:hidden;
+	h2{
+		height:60px;
+		line-height:60px;
+		text-align:center;
+		padding-top:30px;
+		img{
+			width:200px;
+			height:60px;
+			background-size:100%;
+		}
+	}
+	p{
+		@include pos(absolute);
+		left:50%;
+		bottom:50px;
+		width:210px;
+		height:52px;
+		margin-left:-100px;
+	}
+}
+.box{
+	@include full;
+	@include pos;
+	background:url(../images/index.png);
+	.con{
+		@include pos(absolute);
+		left:50%;
+		top:50%;
+		img{
+				width:220px;
+				height:200px;
+				margin-left:-110px;
+				margin-top:-100px;
+				background-size:100%;
+		}
+	}
+}
+.btn{
+	width:100%;
+	
+
+}
+.left{
+	@include pos(absolute);
+	width:36px;
+	height:36px;
+	left:10px;
+	top:50%;
+	z-index:1200;
+	margin-top:-18px;
+	img{
+		width:36px;
+		height:36px;
+	}
+
+}
+.l{	
+		width:36px;
+		height:36px;
+		background:#ccc;
+		color:#fff;
+		left:10px;
+		top:50%;
+		border-radius:20px;	
+		display:block;
+		font-size:30px;
+		text-align:center;
+		line-height:36px;
+		display:none;
+
+}
+.r{	
+		width:36px;
+		height:36px;
+		background:#ccc;
+		color:#fff;
+		left:10px;
+		top:50%;
+		border-radius:20px;	
+		display:block;
+		font-size:30px;
+		text-align:center;
+		line-height:36px;
+		margin-top:-18px;
+		display:none;
+
+}
+.right{
+	@include pos(absolute);
+	width:36px;
+	height:36px;
+	right:10px;
+	top:50%;
+	z-index:1200;
+	img{
+		width:36px;
+		height:36px;
+		margin-top:-18px;
+	}
+}
+
+	
